@@ -1,10 +1,32 @@
 /* Menggunakan Mobile First */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-header {
-    border: 2px solid blue;
+.bg-daftar {
+    background-image: url(assets/img/bg_daftar2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.londrina-solid-font {
+    font-family: "Londrina Solid", sans-serif;
+}
+
+.bg-black-daftar {
+    background: rgba(24, 26, 28, .8);
+    /* backdrop-filter: blur(2px); */
+    border-radius: 4px;
+}
+
+.bg-gray-901 {
+    background-color: #3D4142;
 }
