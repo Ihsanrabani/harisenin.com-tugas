@@ -1,0 +1,106 @@
+/* assets/img/filmCover/Mobile/film_cover4_m.png"
+assets/img/filmCover/Mobile/film_cover5_m.png"
+assets/img/filmCover/Mobile/film_cover6_m.png"
+assets/img/filmCover/Mobile/film_cover7_m.png"
+assets/img/filmCover/Mobile/film_cover14_m.png
+assets/img/filmCover/Mobile/film_cover19_m.png
+assets/img/filmCover/Mobile/film_cover20_m.png
+assets/img/filmCover/Mobile/film_cover21_m.png */
+
+/* w-24 h-auto xl:h-96 xl:w-60 */
+
+.bg-cust3-1 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover4_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust3-2 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover5_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust3-3 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover6_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust3-4 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover7_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust3-5 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover14_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust3-6 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover19_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust3-7 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover20_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust3-8 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover21_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}

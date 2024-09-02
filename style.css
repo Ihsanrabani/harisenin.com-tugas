@@ -1,6 +1,6 @@
 /* Menggunakan Mobile First */
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
     padding: 0px;
@@ -8,10 +8,23 @@
     box-sizing: border-box;
 }
 
+/* .oveflow-x-hidden {
+    overflow-x: hidden;
+} */
+
+.bg-gray-base {
+    background-color: #181A1C;
+}
+
+.space-beetween {
+    display: flex;
+    justify-content: space-between;
+}
+
 .bg-daftar {
     background-image: url(assets/img/bg_daftar2.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
@@ -27,6 +40,179 @@
     border-radius: 4px;
 }
 
+.w-cust-95 {
+    width: 95px;
+    height: auto;
+}
+
+.max-w-texthero {
+    max-width: 600px;
+}
+
+.border-gray-901 {
+    border: #C1C2C4 solid 1px;
+}
+
+.border-gray-902 {
+    border: #E7E3FC3B solid 1px;
+}
+
+.border-t-footer {
+    border-top:1px solid #E7E3FC3B;
+}
+
+.text-gray-901 {
+    color: #C1C2C4;
+}
+
+.bg-blue-901 {
+    background-color: #0F1E93;
+}
+
+.bg-red-901 {
+    background-color: #B71F1D;
+}
+
 .bg-gray-901 {
     background-color: #3D4142;
+}
+
+.bg-gray-902 {
+    background-color: #181A1C;
+}
+
+.bg-gray-903 {
+    background-color: #22282A;
+}
+
+.bg-gray-904 {
+    background-color: #22282A;
+}
+
+/* lato font */
+
+.lato-bold {
+    font-family: "lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-semibold {
+    font-family: "lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lato-medium {
+    font-family: "lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bg-image-1 {
+    background: linear-gradient(to top, rgba(24, 26, 28, 1), rgba(24, 26, 28, 0)), url(assets/img/filmCover/Mobile/film_cover_m.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-sect2-1 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover2_m.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:162px;
+    min-width: 302px;
+}
+
+.bg-sect2-2 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover3_m.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:162px;
+    min-width: 302px;
+
+}
+
+.bg-sect2-3 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover15_m.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:162px;
+    min-width: 302px;
+
+}
+
+.bg-sect2-4 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover16_m.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:162px;
+    min-width: 302px;
+
+}
+
+.bg-sect2-5 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover17_m.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:162px;
+    min-width: 302px;
+
+}
+
+.bg-mulai {
+    background-color: #0F1E93;
+}
+
+.text-2xs {
+    font-size: 8px;
+}
+
+.ml-cust {
+    margin-left: 10%;
+}
+
+
+
+@media (min-width: 1280px) { 
+    .h-587 {
+        height: 587px;
+    }
+/* 
+    .w-custom-800 {
+        width:800px;
+    } */
+
+    .bg-sect2-1 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover2_m.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:151px;
+    min-width: 309px;
+    }
+
+    .bg-sect2-2 {
+        background-image: url(assets/img/filmCover/Mobile/film_cover3_m.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height:151px;
+        min-width: 309px;
+
+    }
+
+    .h-hero-img {
+        height: 587px;
+    }
 }

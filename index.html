@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="image_sect3.css">
     <title>Chill</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-base">
-    <nav class="bg-gray-902 h-16 flex px-2">
-        <div class="flex items-center">
-            <img src="assets/img/CHILL-logo.png" alt="Logo chill" width="27">
+<body class="bg-gray-base box-border overflow-x-hidden">
+    <nav class="bg-gray-902 h-16 flex py-6 flex items-center">
+        <div class="flex items-center xl:ml-16">
+            <img src="assets/img/CHILL-logo.png" alt="Logo chill" width="27" class="h-8 w-auto">
+            <h1 class="londrina-solid-font text-white text-2xl hidden xl:block xl:text-3xl">CHILL</h1>
         </div>
 
-        <div class="flex items-center gap-4 m-4 mr-auto">
-            <a href="#" class="text-white lato-regular text-sm">Series</a>
-            <a href="#" class="text-white lato-regular text-sm">Film</a>
-            <a href="#" class="text-white lato-regular text-sm">Daftar Saya</a>
+        <div class="flex text-center gap-4 m-4 mr-auto xl:ml-16 xl:gap-16">
+            <a href="#" class="text-white lato-regular text-sm xl:text-xl">Series</a>
+            <a href="#" class="text-white lato-regular text-sm xl:text-xl">Film</a>
+            <a href="#" class="text-white lato-regular text-sm xl:text-xl">Daftar Saya</a>
         </div>
 
-        <div class="flex items-center gap-1">
-            <img src="assets/img/Avatar.png" alt="avatar" class="rounded-full h-7">
+        <div class="flex items-center gap-1 xl:mr-8">
+            <img src="assets/img/Avatar.png" alt="avatar" class="rounded-full h-7 xl:h-10 mr-2">
             <button onclick=""><svg fill="#ffffff" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-33 -33 396.00 396.00" xml:space="preserve" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="6.6"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg></button>
         </div>
     </nav>
 
     <!-- <<HERO>> -->
-    <section class="bg-image-1 h-10-persen flex items-end">
+    <section class="bg-image-1 h-hero-img xl:h-587 h- w-full flex items-end px-5">
         <div class="flex flex-col gap-3 ml-3 mb-5">
-            <div class="">
-                <h3 class="lato-bold text-white text-2xl">Duty After School</h3>
-            </div>
-            <div>
-                <p class="text-white">Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut ...</p>
+            <div class="max-w-texthero mt-20">
+                <h3 class="lato-bold text-white text-2xl md:text-4xl">Duty After School</h3>
+
+                <p class="lato-medium text-lg text-white overflow-hidden text-ellipsis line-clamp-3">Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
             </div>
 
-            <div class="flex gap-12">
+            <div class="flex justify-between w-full">
                 <div class="flex">     
                     <button class="text-white bg-mulai py-1 px-3 rounded-full lato-bold">Mulai</button>
 
@@ -55,120 +57,251 @@
     </section>
 
     <!-- <<Melanjutkan tonton film>> -->
-    <section class="mt-4 ml-5">
-        <h2 class="mb-5 lato-bold text-xl text-white">Melanjutkan Tonton Film</h2>
+    <section class="mt-4 ml-5 xl:mr-5">
+        <h2 class="mb-5 lato-bold text-xl text-white xl:text-2xl gap-4 md:gap-6">Melanjutkan Tonton Film</h2>
         
-        <div class="flex gap-3">
-
+        <div class="flex gap-3 horizontal-scroll">
             <div class="bg-sect2-1 rounded-lg flex items-end justify-between">
-                <h1 class="lato-bold text-white text-xl ml-3 mb-4">Don't Look Up</h1>
-                <p class="text-md lato-bold mb-4 mr-2 text-white">★ 4.5/5</p>
+                <h1 class="lato-bold text-white text-xl ml-3 mb-2">Don't Look Up</h1>
+                <p class="text-md lato-bold mb-2 mr-2 text-white">★ 4.5/5</p>
             </div>                
 
             <div class="bg-sect2-2 rounded-lg flex items-end justify-between">  
+                <h1 class="lato-bold text-white text-xl ml-3 mb-2">Doctor strange</h1>
+                <p class="text-md lato-bold mb-2 mr-2 text-white">★ 4.3/5</p>
+            </div>
+
+            <div class="bg-sect2-3 rounded-lg flex items-end justify-between">  
+                <h1 class="lato-bold text-white text-xl ml-3 mb-2">Blue Lock</h1>
+                <p class="text-md lato-bold mb-2 mr-2 text-white">★ 4.6/5</p>
+            </div>
+
+            <div class="bg-sect2-4 rounded-lg flex items-end justify-between">  
+                <h1 class="lato-bold text-white text-xl ml-3 mb-2">A Man Called Otto</h1>
+                <p class="text-md lato-bold mb-2 mr-2 text-white">★ 4.4/5</p>
+            </div>
+
+            <div class="bg-sect2-5 rounded-lg flex items-end justify-between">  
+                <h1 class="lato-bold text-white text-xl ml-3 mb-2">The Batman</h1>
+                <p class="text-md lato-bold mb-2 mr-2 text-white">★ 4.2/5</p>
             </div>
         </div>
+
     </section>
 
     <!-- <<Top Rating Film dan Series Hari ini>> -->
     <section class="mt-3 ml-5">
-        <h2 class="lato-bold text-xl text-white mb-5">Top Rating Film dan Series Hari ini</h2>
+        <h2 class="lato-bold text-xl text-white mb-5 xl:text-2xl">Top Rating Film dan Series Hari ini</h2>
+        
+        <div class="flex gap-3 horizontal-scroll items-center">
 
-        <div class=" flex gap-4">
-            <div class="shrink-0">
-                <p class="text-white absolute ml-2 text-2xs rounded-full mt-2 lato-bold p-1 bg-blue-901">Episode Baru</p>
-                <img src="assets/img/filmCover/Mobile/film_cover4_m.png" alt="" height="143" width="95"  class="rounded-lg">
+            <div class="shrink-0 relative">
+                <p class="text-white text-2xs absolute xl:text-sm rounded-full mt-2 lato-bold p-1 bg-blue-901 flex justify-center ml-2">Episode Baru</p>
+                <img src="assets/img/filmCover/Mobile/film_cover4_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
 
-            <div class="shrink-0">
-                <img src="assets/img/filmCover/Mobile/film_cover5_m.png" alt="" height="143" width="95"  class="rounded-lg">
+            <div class="shrink-0 relative">
+                <img src="assets/img/filmCover/Mobile/film_cover5_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
 
-            <div class="shrink-0">
-                <img src="assets/img/filmCover/Mobile/film_cover6_m.png" alt="" height="143" width="95"  class="rounded-lg">
+            <div class="shrink-0 relative">
+                <p class="text-white text-2xs absolute xl:text-sm rounded-full mt-2 lato-bold p-1 bg-blue-901 flex justify-center ml-2">Episode Baru</p>
+                <img src="assets/img/filmCover/Mobile/film_cover6_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
 
-            <div class="shrink-0">
-                <img src="assets/img/filmCover/Mobile/film_cover7_m.png" alt="" height="143" width="95"  class="rounded-lg">
+            <div class="shrink-0 relative">
+                <img src="assets/img/filmCover/Mobile/film_cover7_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
+            </div>
+
+            <div class="shrink-0 relative">
+                <img src="assets/img/filmCover/Mobile/film_cover14_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
+            </div>
+
+            <div class="shrink-0 relative">
+                <p class="text-white text-2xs absolute xl:text-sm rounded-full mt-2 lato-bold p-1 bg-blue-901 flex justify-center ml-2">Episode Baru</p>
+                <img src="assets/img/filmCover/Mobile/film_cover19_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
+            </div>
+
+            <div class="shrink-0 relative">
+                <img src="assets/img/filmCover/Mobile/film_cover20_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
+            </div>
+
+            <div class="shrink-0 relative">
+                <img src="assets/img/filmCover/Mobile/film_cover21_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:-60">
             </div>
         </div>
     </section>
 
     <!-- <<Film Trending>> -->
     <section class="mt-3 ml-5">
-        <h2 class="lato-bold text-xl text-white mb-5">Film Trending</h2>
+        <h2 class="lato-bold text-xl text-white mb-5 xl:text-2xl">Film Trending</h2>
 
-        <div class=" flex gap-4">
-            <div class="shrink-0">
-                <p class="absolute text-white text-2xs bg-red-901 p-0.5 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
-                <img src="assets/img/filmCover/Mobile/film_cover8_m.png" alt="" height="143" width="95"  class="rounded-lg">
+        <div class="flex gap-4 horizontal-scroll">
+            <div class="shrink-0 relative">
+                <p class="absolute text-white text-2xs xl:text-sm bg-red-901 p-0.5 xl:p-1 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
+                <img src="assets/img/filmCover/Mobile/film_cover8_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
 
-            <div class="shrink-0">
-                <p class="absolute text-white text-2xs bg-red-901 p-0.5 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
-                <img src="assets/img/filmCover/Mobile/film_cover9_m.png" alt="" height="143" width="95"  class="rounded-lg">
+            <div class="shrink-0 relative">
+                <p class="absolute text-white text-2xs xl:text-sm bg-red-901 p-0.5 xl:p-1 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
+                <img src="assets/img/filmCover/Mobile/film_cover9_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
 
-            <div class="shrink-0">
-                <p class="absolute text-white text-2xs bg-red-901 p-0.5 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
-                <img src="assets/img/filmCover/Mobile/film_cover10_m.png" alt="" height="143" width="95"  class="rounded-lg">
+            <div class="shrink-0 relative">
+                <p class="absolute text-white text-2xs xl:text-sm bg-red-901 p-0.5 xl:p-1 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
+                <img src="assets/img/filmCover/Mobile/film_cover10_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
 
-            <div class="shrink-0">
-                <p class="absolute text-white text-2xs bg-red-901 p-0.5 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
-                <img src="assets/img/filmCover/Mobile/film_cover11_m.png" alt="" height="143" width="95"  class="rounded-lg">
+            <div class="shrink-0 relative">
+                <p class="absolute text-white text-2xs xl:text-sm bg-red-901 p-0.5 xl:p-1 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
+                <img src="assets/img/filmCover/Mobile/film_cover11_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
+            </div>
+
+            <div class="shrink-0 relative">
+                <p class="absolute text-white text-2xs xl:text-sm bg-red-901 p-0.5 xl:p-1 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
+                <img src="assets/img/filmCover/Mobile/film_cover14_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
+            </div>
+
+            <div class="shrink-0 relative">
+                <p class="absolute text-white text-2xs xl:text-sm bg-red-901 p-0.5 xl:p-1 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
+                <img src="assets/img/filmCover/Mobile/film_cover18_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
         </div>
     </section>
 
     <!-- <<Rilis Baru>> -->
     <section class="mt-3 ml-5">
-        <h2 class="lato-bold text-xl text-white mb-5">Rilis Baru</h2>
+        <h2 class="lato-bold text-xl text-white mb-5 xl:text-2xl">Rilis Baru</h2>
 
-        <div class=" flex gap-4">
-            <div class="shrink-0">
-                <p class="absolute text-white text-2xs bg-red-901 p-0.5 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
-                <img src="assets/img/filmCover/Mobile/film_cover12_m.png" alt="" height="143" width="95"  class="rounded-lg">
+        <div class=" flex gap-4 horizontal-scroll">
+            <div class="shrink-0 relative">
+                <p class="absolute text-white text-2xs xl:text-sm bg-red-901 p-0.5 xl:p-1 rounded-tr rounded-bl ml-cust text-center">Top <br>10</p>
+
+                <img src="assets/img/filmCover/Mobile/film_cover12_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
 
-            <div class="shrink-0">
+            <div class="shrink-0 relative">
                 <p class="text-white absolute ml-2 text-2xs rounded-full mt-2 lato-bold p-1 bg-blue-901">Episode Baru</p>
-                <img src="assets/img/filmCover/Mobile/film_cover13_m.png" alt="" height="143" width="95"  class="rounded-lg">
+                <img src="assets/img/filmCover/Mobile/film_cover13_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
 
-            <div class="shrink-0">
-                <img src="assets/img/filmCover/Mobile/film_cover14_m.png" alt="" height="143" width="95"  class="rounded-lg">
+            <div class="shrink-0 relative">
+                <p class="text-white absolute ml-2 text-2xs rounded-full mt-2 lato-bold p-1 bg-blue-901">Episode Baru</p>
+
+                <img src="assets/img/filmCover/Mobile/film_cover14_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
 
-            <div class="shrink-0">
-                <img src="assets/img/filmCover/Mobile/film_cover6_m.png" alt="" height="143" width="95"  class="rounded-lg">
+            <div class="shrink-0 relative">
+                <p class="text-white absolute ml-2 text-2xs rounded-full mt-2 lato-bold p-1 bg-blue-901">Episode Baru</p>
+
+                <img src="assets/img/filmCover/Mobile/film_cover6_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
+            </div>
+
+            <div class="shrink-0 relative">
+                <p class="text-white absolute ml-2 text-2xs rounded-full mt-2 lato-bold p-1 bg-blue-901">Episode Baru</p>
+
+                <img src="assets/img/filmCover/Mobile/film_cover22_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
+            </div>
+
+            <div class="shrink-0 relative">
+                <p class="text-white absolute ml-2 text-2xs rounded-full mt-2 lato-bold p-1 bg-blue-901">Episode Baru</p>
+
+                <img src="assets/img/filmCover/Mobile/film_cover23_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
+            </div>
+
+            <div class="shrink-0 relative">
+                <p class="text-white absolute ml-2 text-2xs rounded-full mt-2 lato-bold p-1 bg-blue-901">Episode Baru</p>
+
+                <img src="assets/img/filmCover/Mobile/film_cover24_m.png" alt=""  class="rounded-lg w-24 h-auto xl:h-96 xl:w-60">
             </div>
         </div>
     </section>
 
     <!-- footer -->
     <footer class="border-t-footer mt-10 h-auto">
-        <div class="ml-5 mt-4">
-            <div class="flex items-center">
-                <img src="assets/img/CHILL-logo.png" alt="Chill Logo" class="shrink-0" width="23" height="auto">
-                <h1 class="text-white londrina-solid-font text-2xl">Chill</h1>
-            </div>
+        <div class="ml-5 mt-4 xl:py-5 xl:flex xl:justify-center xl:px-20">
+            <div class="hidden xl:flex xl:justify-between xl:w-full ">
+                <div class=" flex flex-col justify-center">
+                    <div class="flex items-center">
+                        <img src="assets/img/CHILL-logo.png" alt="Chill Logo" class="shrink-0 w-6 xl:w-8" width="23" height="auto">
+                        <h1 class="text-white londrina-solid-font text-2xl xl:text-3xl">Chill</h1>
+                    </div>
 
-            <div class="mt-3">
-                <p class="text-gray-901 text-sm mb-8">&copy;2023 Chill All Rights Reserved</p>
-            </div>
-
-            <div class="">
-                <div class="flex justify-between pr-5">
-                    <p class="lato-medium text-white">Genre</p>
-                    <span class="lato-bold text-white text-xl">></span>
+                    <div class="mt-3">
+                        <p class="text-gray-901 text-sm mb-8">&copy;2023 Chill All Rights Reserved</p>
+                    </div>
                 </div>
 
-                <div class="flex justify-between mt-1 pr-5">
-                    <p class="lato-medium text-white">Bantuan</p>
-                    <span class="lato-bold text-white text-xl">></span>
+                <div class="hidden xl:block ">
+                    <div>
+                        <p class="lato-bold text-white text-base">Genre</p>
+                        <div class="flex gap-5 mt-2">
+                            <ul class="">
+                                <li class="text-gray-901 lato-medium">Aksi</li>
+                                <li class="mt-2 text-gray-901 lato-medium">Anak-anak</li>
+                                <li class="mt-2 text-gray-901 lato-medium">Anime</li>
+                                <li class="mt-2 text-gray-901 lato-medium">Britania</li>
+                            </ul>
+
+                            <ul class="">
+                                <li class="text-gray-901 lato-medium">Drama</li>
+                                <li class="mt-2 text-gray-901 lato-medium">Fantasi Ilmiah & Fantasi</li>
+                                <li class="mt-2 text-gray-901 lato-medium">Kejahatan</li>
+                                <li class="mt-2 text-gray-901 lato-medium">KDrama</li>
+                            </ul>
+
+                            <ul class="">
+                                <li class="text-gray-901 lato-medium">Komedi</li>
+                                <li class="mt-2 text-gray-901 lato-medium">Petualangan</li>
+                                <li class="mt-2 text-gray-901 lato-medium">Perang</li>
+                                <li class="mt-2 text-gray-901 lato-medium">Romantis</li>
+                            </ul>
+
+                            <ul class="">
+                                <li class="text-gray-901 lato-medium">Sains & Alam</li>
+                                <li class="mt-2 text-gray-901 lato-medium">Thriller</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <p class="lato-bold text-white text-base">Bantuan</p>
+                    <ul class="">
+                        <li class="text-gray-901 lato-medium">FAQ</li>
+                        <li class="mt-2 text-gray-901 lato-medium">Kontak Kami</li>
+                        <li class="mt-2 text-gray-901 lato-medium">Privasi</li>
+                        <li class="mt-2 text-gray-901 lato-medium">Syarat & Ketentuan</li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="flex flex-col xl:hidden">
+                <div class=" flex flex-col">
+                        <div class="flex items-center">
+                            <img src="assets/img/CHILL-logo.png" alt="Chill Logo" class="shrink-0 w-6 xl:w-8" width="23" height="auto">
+                            <h1 class="text-white londrina-solid-font text-2xl xl:text-3xl">Chill</h1>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="text-gray-901 text-sm mb-8">&copy;2023 Chill All Rights Reserved</p>
+                        </div>
+                    </div>
+
+                <div class="xl:hidden">
+                    <div class="flex justify-between pr-5">
+                        <p class="lato-medium text-white">Genre</p>
+                        <span class="lato-bold text-white text-xl">></span>
+                    </div>
+
+                    <div class="flex justify-between mt-1 pr-5">
+                        <p class="lato-medium text-white">Bantuan</p>
+                        <span class="lato-bold text-white text-xl">></span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </footer>
 </body>

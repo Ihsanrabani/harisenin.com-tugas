@@ -1,0 +1,65 @@
+/* cover8_m.png
+cover9_m.png
+cover10_m.pn
+cover11_m.pn
+cover14_m.pn */
+
+.bg-cust4-1 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover8_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust4-2 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover9_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust4-3 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover10_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust4-4 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover11_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}
+
+.bg-cust4-5 {
+    background-image: url(assets/img/filmCover/Mobile/film_cover13_m.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 96px;
+    max-width: 240px;
+    min-height: auto;
+    max-height: 384px;
+    border-radius: 4px;
+}

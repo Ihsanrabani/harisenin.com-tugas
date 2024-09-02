@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+    .cust-container {
+        display: flex;
+        gap: 12px;
+    }
+
+    .horizontal-scroll {
+        width: 100%;
+        overflow-x: scroll;
+        scrollbar-color: transparent transparent;
+    }
+}
