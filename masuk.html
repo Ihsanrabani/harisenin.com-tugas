@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Masuk | Chill</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-daftar">
+    <div class="container h-screen flex justify-center items-center">
+        <div class="bg-black-daftar h-auto w-auto blur-cust py-8 flex flex-col justify-center items-center">
+            <!-- Bagian logo dan Nama perusahaan -->
+            <div class="flex justify-center items-center gap-2">
+                <img src="assets/img/CHILL-logo.png" alt="Chill Logo" class="">
+                <h1 class="text-white londrina-solid-font text-5xl">Chill</h1>
+            </div>
+
+            <!-- judul -->
+            <div class="mt-3 text-center">
+                <h3 class="text-white text-2xl font-normal ">Masuk</h3>
+                <p class="text-white text-sm">Selamat datang!</p>
+            </div>
+
+            <!-- form -->
+             <form action="" class="mt-4">
+
+             <div class="mt-3">
+                <div class="flex flex-col px-7">
+                    <label for="username" class="text-white">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Masukkan username" class="text-white rounded-2xl mt-1 p-2 w-80 bg-transparent border border-gray-500">
+                </div>
+             </div>
+
+             <div class="mt-3">
+                <div class="flex flex-col px-7">
+                    <label for="kata_sandi" class="text-white">Kata sandi</label>
+                    <input type="password" name="kata_sandi" id="kata_sandi" placeholder="Masukkan kata sandi" class="text-white rounded-2xl mt-1 p-2 bg-transparent border border-gray-500">
+
+                    <div class="flex justify-between items-center px-1 mb-5">
+                        <p class="text-white text-sm font-thin">Sudah punya akun? <a class="text-white font-normal" href="daftar.html">daftar</a></p>
+                        <a class="text-white font-normal text-sm" href="#">Lupa Kata sandi?</a>
+                    </div>
+                </div>
+             </div>
+
+
+             </form>
+
+
+            <!-- button -->
+
+            <button class="w-60 h-9 bg-gray-901 text-white text-sm rounded-full border border-gray-600 mt-5">Daftar</button>
+
+            <p class="text-gray-400 my-2">Atau</p>
+
+            <button class="bg-transparent text-white flex items-center justify-center border border-gray-600 gap-3 w-60 rounded-full h-8">
+                <img src="assets/img/google.png" alt="" class="w-4">
+                <p class="text-xs">Daftar dengan Google</p>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
