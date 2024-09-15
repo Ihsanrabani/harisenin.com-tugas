@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <nav class="border flex">
+        <div class="flex gap-4 justify-center">
+            <div class="title-nav text-xl text-center">
+                <h1>ToDoList</h1>
+            </div>
+
+            <div class="links-nav flex gap-3 text-center">
+                <a class="link" href="#">Home</a>
+                <a class="link" href="#">Done Task</a>
+                <a class="link" href="#">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="border">
+        <form action="" class="border border-red-500 flex flex-col p-5 bg-gray-600" id="inputForm">
+            <label for="task-name" class="">Nama Tugas</label>
+            <input name="task-name" id="taskName" class="border">
+
+            <label for="priority" class="mt-4">prioritas</label>
+            <select name="priority" id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <div class="flex mt-4 justify-end">
+                <button type="submit" name="submit" id="submit" class="border w-32 text-white" onclick="displayToDo(event)">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h1>todoList</h1>
+        <hr>
+        <ul id="todoList">
+            <!-- <li>
+                <p>Nama tugas: makan</p>
+                <p>prioritas: Medium</p>
+                <p>Taggal di buat:</p>
+
+                <input type="checkbox" id="checkbox">
+            </li> -->
+        </ul>
+    </section>
+
+
+    <section  class="border-red-500">
+        <h1>DoneList</h1>
+        <hr>
+        <ul id="doneList">
+
+        </ul>
+    </section>
+
+
+    <script src="index.js"></script>
 </body>
 </html>
