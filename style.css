@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.no-task {
+    color: rgba(138, 138, 138, .8);
+}
+
+
+.title-TDList {
+    background-color: #7BD3EA;
+    padding: 4px;
+    border: 1px solid #7BD3EA;
+    border-radius: 6px 6px 0 0;
+}
+
+.TD-wrapper {
+    border: 2px solid #7BD3EA;
+    border-radius: 6px;
+    padding: 15px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.prioritas-low {
+    border: 2px solid rgb(0, 174, 255);
+    background-color: rgba(118, 187, 252, .5);
+    border-right: none;
+    text-align: start;
+    display: flex;
+    border-radius: 5px;
+}
+
+.prioritas-medium {
+    border: 2px solid rgb(251, 255, 0);
+    background-color: rgba(252, 255, 58, 0.3);
+    border-right: none;
+    text-align: start;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+.prioritas-high {
+    border: 2px solid rgb(255, 16, 16);
+    background-color: rgba(255, 39, 39, 0.5);
+    border-right: none;
+    text-align: start;
+    display: flex;
+}
+
+.cb-wrapper {
+    /* border: 2px solid red; */
+    padding-left: 5px;
+}
+
+.info-wrapper {
+    /* border: 2px solid red; */
+    padding-left: 10px;
+    width: 100%;
+}
+
+.title-todo {
+    font-size: 22px;
+    /* border: 2px solid blue; */
+
+}
+
+.date-todo {
+    margin-top: 3%;
+    /* border: 2px solid blue; */
+}
+
+.label-wrapper-low {
+    /* border: 1px solid black; */
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color:  rgb(0, 174, 255);
+    display: flex;
+    height: min-content;
+    border: 1px solid  rgb(0, 174, 255);
+    border-radius: 0 0 0 5px;
+    /* border: 2px solid blue; */
+}
+
+.label-wrapper-medium {
+    /* border: 1px solid black; */
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color:  rgb(251, 255, 0);
+    display: flex;
+    height: min-content;
+    border: 1px solid  rgb(251, 255, 0);
+    border-radius: 0 0 0 5px;
+}
+
+.label-wrapper-high {
+    /* border: 1px solid black; */
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color:  rgb(255, 16, 16);
+    display: flex;
+    height: min-content;
+    border: 1px solid rgb(255, 16, 16);
+    border-radius: 0 0 0 5px;
+}
+
+.label-todo {
+    font-weight: 400;
+}
+
+
+.delBtn-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 6%;
+    background-color: #ff5233;
+    /* border: 2px solid black; */
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+}
+
+/* VV To Do Done list VV */
+
+.title-TDDList {
+    background-color: #A1EEBD;
+    padding: 4px;
+    border: 1px solid #A1EEBD;
+    border-radius: 6px 6px 0 0;
+}
+
+.TDD-wrapper {
+    border: 2px solid #A1EEBD;
+    border-radius: 6px;
+    padding: 15px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

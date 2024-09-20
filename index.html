@@ -6,20 +6,14 @@
     <title>ToDoList</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="border flex">
-        <div class="flex gap-4 justify-center">
-            <div class="title-nav text-xl text-center">
-                <h1>ToDoList</h1>
-            </div>
-
-            <div class="links-nav flex gap-3 text-center">
-                <a class="link" href="#">Home</a>
-                <a class="link" href="#">Done Task</a>
-                <a class="link" href="#">Profile</a>
-            </div>
+    <nav>
+        <div class="border border-red-500">
+            <h1>TDL</h1>
         </div>
+
     </nav>
 
     <section class="border">
@@ -40,28 +34,69 @@
         </form>
     </section>
 
-    <section>
-        <h1>todoList</h1>
-        <hr>
-        <ul id="todoList">
-            <!-- <li>
-                <p>Nama tugas: makan</p>
-                <p>prioritas: Medium</p>
-                <p>Taggal di buat:</p>
+    <section class="text-center flex flex-col items-center ">
+        <h1 class="title-TDList">To Do List</h1>
+        <ul id="todoList" class="TD-wrapper">
 
-                <input type="checkbox" id="checkbox">
+            <!-- <li class="prioritas-low">
+                <div class="cb-wrapper"></div>
+                    <input type="checkbox" class="cb">
+                </div>
+                <div class="info-wrapper">
+                    <h1 class="title-todo">Sholat dhuha</h1>
+
+                    <p class="date-todo">30/12/99</p>
+                </div>
+                <div class="label-wrapper-low">
+                    <p class="label-todo">Low</p>
+                </div>
+
+                <div class="delBtn-wrapper">
+                    <button class="del-btn" onclick="deleteTodo">X</button>
+                </div>
             </li> -->
+
+            <!-- <li class="prioritas-medium">
+                <div class="cb-wrapper">
+                    <input type="checkbox" class="cb">
+                </div>
+                <div class="info-wrapper">
+                    <h1 class="title-todo">Wudhu dan makna dan solat abscdefghijklmn</h1>
+
+                    <p class="date-todo">30/12/99</p>
+                </div>
+                <div class="label-wrapper-medium">
+                    <p class="label-todo">Medium</p>
+                </div>
+            </li>
+
+            <li class="prioritas-high">
+                <div class="cb-wrapper">
+                    <input type="checkbox" class="cb">
+                </div>
+                <div class="info-wrapper">
+                    <h1 class="title-todo">Wudhu dan makna dan solat abscdefghijklmn</h1>
+
+                    <p class="date-todo">30/12/99</p>
+                </div>
+                <div class="label-wrapper-high">
+                    <p class="label-todo">High</p>
+                </div>
+            </li> -->
+
         </ul>
+        <button class="del-btn-td" onclick="deleteTodo()">Hapus semua To Do</button>
     </section>
 
 
-    <section  class="border-red-500">
-        <h1>DoneList</h1>
-        <hr>
-        <ul id="doneList">
+    <section  class="text-center flex flex-col items-center  mt-12">
+        <h1 class="title-TDDList">To Do Done</h1>
+        <ul id="doneList" class="TDD-wrapper">
 
         </ul>
     </section>
+
+    <p class="tes">test</p>
 
 
     <script src="index.js"></script>
