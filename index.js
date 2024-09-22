@@ -286,6 +286,22 @@ function deleteTodo() {
   }
 }
 
+function deleteTododone() {
+  let ulParent = document.getElementById("doneList");
+
+  while (ulParent.firstChild) {
+    ulParent.removeChild(ulParent.firstChild);
+  }
+
+  if (doneList.children.length == 0) {
+    //cek apakah ada li di dalam ul
+    let noTask = document.createElement("p");
+    noTask.classList.add("no-task");
+    noTask.innerHTML = "Belum ada tugas yang selesai";
+    doneList.appendChild(noTask);
+  }
+}
+
 function deleteTodoI() {
   let child = document.getElementById("delWrapper");
 

@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+/* ===================NAVBAR====================== */
+
+
+.border-btm-cust {
+    border-bottom: 1px solid rgba(92, 92, 92, .5);
+}
+
+.border-input-cust {
+    border: 1px solid rgba(122, 122, 122, .5);
+    border-radius: 6px;
+}
+
+.w-400-cust {
+    width: 400px;
+}
+
+.select {
+    padding-left: 4px;
+    border: 1px solid rgba(122, 122, 122, .5);
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+/* ========================================= */
 
 .no-task {
     color: rgba(138, 138, 138, .8);

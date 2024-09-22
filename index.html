@@ -9,38 +9,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="flex">
-        <div class="border border-yellow-500 ">
+    <nav class="flex items-center py-2 border-btm-cust">
+        <div class="pl-5">
             <h1 class="text-xl font-2xl">ToDoList</h1>
         </div>
-        <div class="border border-red-500 w-full flex justify-end">
-            <img src="https://placehold.co/50x50" alt="">
+        <div class="w-full flex justify-end gap-2 pr-5">
+            <img src="ppisnblt.png" alt="" class="rounded-full" width="50" height="auto">
             <div class="">
-                <p>Ihsan Rabbani</p>
-                <p>CEO</p>
+                <p class="font-semibold">Ihsan Rabbani</p>
+                <p class="font-semibold">CEO</p>
             </div>
         </div>
     </nav>
 
-    <section class="border">
-        <form action="" class="border border-red-500 flex flex-col p-5 bg-gray-600" id="inputForm">
-            <label for="task-name" class="">Nama Tugas</label>
-            <input name="task-name" id="taskName" class="border">
+    <section class="w-full flex justify-center mt-10">
+        <div class="border w-min">
+            <form action="" class="flex flex-col p-5 border-input-cust w-400-cust" id="inputForm">
+                <label for="task-name" class="">Nama Tugas</label>
+                <textarea name="task-name" id="taskName" class="rounded border-input-cust"></textarea>
 
-            <label for="priority" class="mt-4">prioritas</label>
-            <select name="priority" id="priority">
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
+                <label for="priority" class="mt-4 ">prioritas</label>
+                <select name="priority" id="priority" class="select">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
 
-            <div class="flex mt-4 justify-end">
-                <button type="submit" name="submit" id="submit" class="border w-32 text-white" onclick="displayToDo(event)">Submit</button>
-            </div>
-        </form>
+                <div class="flex mt-4 justify-end">
+                    <button type="submit" name="submit" id="submit" class="border-input-cust w-32" onclick="displayToDo(event)">Submit</button>
+                </div>
+            </form>
+        </div>
     </section>
 
-    <section class="text-center flex flex-col items-center ">
+    <section class="text-center flex flex-col items-center mt-10">
         <h1 class="title-TDList">To Do List</h1>
         <ul id="todoList" class="TD-wrapper">
 
@@ -95,15 +97,13 @@
     </section>
 
 
-    <section  class="text-center flex flex-col items-center  mt-12">
+    <section  class="text-center flex flex-col items-center  mt-10">
         <h1 class="title-TDDList">To Do Done</h1>
         <ul id="doneList" class="TDD-wrapper">
 
         </ul>
+        <button class="del-btn-td" onclick="deleteTododone()">Hapus semua To Do Done</button>
     </section>
-
-    <p class="tes">test</p>
-
 
     <script src="index.js"></script>
 </body>
