@@ -1,14 +1,25 @@
-import { useState } from 'react'
-import react from 'react'
-import './index.css'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DaftarPage from "./pages/daftarPage/DaftarPage.jsx";
+import MasukPage from "./pages/masukPage/MasukPage.jsx";
+import HomePage from "./pages/homePage/HomePage.jsx";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <DaftarPage />
+  },
+  {
+    path: "/masuk",
+    element: <MasukPage />
+  },
+  {
+    path: "/home",
+    element: <HomePage />
+  },
+]);
 
-  const App = () => {
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline">hello</h1>
-    </>
-  )
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;

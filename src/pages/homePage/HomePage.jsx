@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
+import {useNavigate,} from "react-router-dom";
 
 // style
 import "../../index.css";
@@ -17,12 +18,28 @@ import FilmCoverCardWTB from "../../components/fCCardWTB.jsx"
 
 const HomePage = () => {
 
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    const userLoggedIn = JSON.parse(localStorage.getItem("userLoggedIn"));
+    if (!userLoggedIn) {
+      navigate('/masuk');
+    }
+  }, []);
+
   const [isVisible, setIsVisible] = useState("hidden")
 
   const Ontrigger =() => {
     setIsVisible(isVisible === "hidden" ? "block" : "hidden")
     console.log("hello")
   }
+
+  const logout = () => {
+    console.log(JSON.stringify(localStorage.getItem("userLoggedIn")))
+    localStorage.removeItem("userLoggedIn");
+    navigate('/masuk');
+  };
+
 
   return (
     <div className={`${classes.bodyBg} box-border overflow-x-hidden`}>
@@ -68,7 +85,7 @@ const HomePage = () => {
               </svg>
 
 
-              <h1 className="text-white">Keluar</h1>
+              <button className="text-white" onClick={logout}>Keluar</button>
             </div>
           </div>
         </div>
