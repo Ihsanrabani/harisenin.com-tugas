@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+
+.bgDaftar {
+    background-image: url(../assets/img/bg-daftar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgBlackDaftar {
+    background: rgba(24, 26, 28, .8);
+    border-radius: 4px;
+}
+
+.wmin {
+    min-width: 440px;
+}
+
+/*
+  pada ukuran layar >= 768px, maka ukuran minimum element
+  dengan class .wmin akan berubah menjadi 529px
+*/
+@media screen and (min-width: 600px) {
+    .wmin {
+        min-width: 529px;
+    }
+}
+.wmax {
+    max-width: 529px;
+}
+
+.lsRegular {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+@media (max-width: 1279px) {
+    .horizontalScroll {
+        width: 100%;
+        overflow-x: scroll;
+        scrollbar-color: transparent transparent;
+    }
+    
+    .text2xs {
+      font-size: 8px;
+    }
+}
+
+.bodyBg {
+    background-color: #181A1C;
+    width: 100vw;
+    height: 100vh;
+}
+
+.maxWidthTexthero {
+  max-width: 600px;
+}
+
+.mlCust {
+  margin-left: 75%;
+}
+
+/* TYPOGRPY */
+
+.lsRegular {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.latoBold {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.latoSemibold {
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.latoMedium {
+  font-family: "lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.latoRegular {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bgMulai {
+  background-color: #0f1e93;
+}
+
+.bgGray903 {
+  background-color: #22282a;
+}
+
+.bgGray902 {
+  background-color: #181a1c;
+}
+
+.bgBlue901 {
+  background-color: #0f1e93;
+}
+
+.textBlue9000 {
+  color: #3254FF;
+}
+
+.textGray901 {
+  color: #c1c2c4;
+}
+
+.borderGray901 {
+  border: #c1c2c4 solid 1px;
+}
+
+.bgRed901 {
+  background-color: #b71f1d;
+}
+
+.borderTFooter {
+  border-top: 1px solid #e7e3fc3b;
+}
+
+/* IMG */
+
+.bgImage1 {
+  background: linear-gradient(to top, rgba(24, 26, 28, 1), rgba(24, 26, 28, 0)),
+  url(../pages/homePage/filmCover/Mobile/film_cover_m.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bgSect2for1 {
+  background-image: url(../pages/homePage/filmCover/Mobile/film_cover2_m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 162px;
+  min-width: 302px;
+}
+
+.bgSect2for2 {
+  background-image: url(../pages/homePage/filmCover/Mobile/film_cover3_m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 162px;
+  min-width: 302px;
+}
+
+.bgSect2for3 {
+  background-image: url(../pages/homePage/filmCover/Mobile/film_cover15_m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 162px;
+  min-width: 302px;
+}
+
+.bgSect2for4 {
+  background-image: url(../pages/homePage/filmCover/Mobile/film_cover16_m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 162px;
+  min-width: 302px;
+}
+
+.bgSect2for5 {
+  background-image: url(../pages/homePage/filmCover/Mobile/film_cover17_m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 162px;
+  min-width: 302px;
+}
+
+.bgSect3for1 {
+  background-image: url(../pages/homePage/filmCover/Mobile/film_cover4_m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
