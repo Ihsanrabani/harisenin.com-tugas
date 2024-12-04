@@ -19,4 +19,4 @@ const Input = ({label, placeHolder, type, onChange, value}) => {
 }
 // bg-transparent p-2 rounded-full text-gray-500 border border-gray-500 lato-regular py-3.5 pl-5 text-base
 ;
-export default Input
+export default Input;

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {useNavigate,} from "react-router-dom";
+import axios from "axios";
 
 // style
 import "../../index.css";
@@ -11,10 +12,8 @@ import infoIc from "../../assets/icons/info_ic.png"
 import volumeIc from "../../assets/icons/volume_ic.png"
 
 // components
+import FCT from "../../components/fCCard.jsx"
 
-import FilmCoverCard from "../../components/fCCard.jsx"
-import FilmCoverCardWTR from "../../components/fCCardWTR.jsx"
-import FilmCoverCardWTB from "../../components/fCCardWTB.jsx"
 
 const HomePage = () => {
 
@@ -40,6 +39,23 @@ const HomePage = () => {
     navigate('/masuk');
   };
 
+  const [filmDatas, setFilmDatas] = useState([])
+
+  //fetch API pake axios
+
+  useEffect(() => {
+    const fetchDatas = async () => {
+      const res = await axios.get('https://674a9302868020296634d1c9.mockapi.io/dataFilm')
+      try {
+        console.log("Fetching Berhasil")
+        setFilmDatas(res.data)
+      } catch (err) {
+        console.log("Fetching gagal")
+      }
+    }
+    
+    fetchDatas()
+  }, [])      
 
   return (
     <div className={`${classes.bodyBg} box-border overflow-x-hidden`}>
@@ -161,14 +177,9 @@ const HomePage = () => {
           <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Top Rating Film dan Series Hari ini</h2>
           
           <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>
-
-            <FilmCoverCardWTB imgUrl="image4"/>
-            <FilmCoverCardWTR imgUrl="image5"/>
-            <FilmCoverCard imgUrl="image6"/>
-            <FilmCoverCardWTB imgUrl="image7"/>
-            <FilmCoverCard imgUrl="image8"/>
-            <FilmCoverCard imgUrl="image9"/>
-            <FilmCoverCardWTR  imgUrl="image10"/>
+            {filmDatas.slice(0, 8).map((poster) => (
+              <FCT imgUrl={poster.filmPoster} WTB={poster.WTB} WTR={poster.WTR}/>
+            ))}
             
           </div>
         </section>
@@ -180,13 +191,9 @@ const HomePage = () => {
           
           <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>
 
-            <FilmCoverCardWTR imgUrl="image11"/>
-            <FilmCoverCardWTR imgUrl="image12"/>
-            <FilmCoverCardWTR imgUrl="image13"/>
-            <FilmCoverCardWTR imgUrl="image14"/>
-            <FilmCoverCardWTR imgUrl="image18"/>
-            <FilmCoverCardWTR imgUrl="image19"/>
-            <FilmCoverCardWTR imgUrl="image20"/>
+            {filmDatas.slice(9, 17).map((poster) => (
+              <FCT imgUrl={poster.filmPoster} WTB={poster.WTB} WTR={poster.WTR}/>
+            ))}
 
           </div>
           
@@ -198,13 +205,9 @@ const HomePage = () => {
           <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Rilis Baru</h2>
           
           <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>
-            <FilmCoverCardWTB imgUrl="image21"/>
-            <FilmCoverCardWTB imgUrl="image22"/>
-            <FilmCoverCardWTB imgUrl="image23"/>
-            <FilmCoverCardWTB imgUrl="image4"/>
-            <FilmCoverCardWTB imgUrl="image8"/>
-            <FilmCoverCardWTB imgUrl="image5"/>
-            <FilmCoverCardWTB imgUrl="image4"/>
+            {filmDatas.slice(18, 26).map((poster) => (
+              <FCT imgUrl={poster.filmPoster} WTB={poster.WTB} WTR={poster.WTR}/>
+            ))}
           </div>
           
       </section>
