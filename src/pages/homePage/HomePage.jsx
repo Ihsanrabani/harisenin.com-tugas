@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from "react";
-import {useNavigate,} from "react-router-dom";
-import axios from "axios";
+import React, {useState, useEffect} from "react"
+import {useNavigate} from "react-router-dom";
+import useApi from "../../store/useApi";
+import getApi from "../../services/api/api.js"
 
 // style
 import "../../index.css";
@@ -13,6 +14,7 @@ import volumeIc from "../../assets/icons/volume_ic.png"
 
 // components
 import FCT from "../../components/fCCard.jsx"
+import { use } from "react";
 
 
 const HomePage = () => {
@@ -30,7 +32,6 @@ const HomePage = () => {
 
   const Ontrigger =() => {
     setIsVisible(isVisible === "hidden" ? "block" : "hidden")
-    console.log("hello")
   }
 
   const logout = () => {
@@ -39,23 +40,35 @@ const HomePage = () => {
     navigate('/masuk');
   };
 
-  const [filmDatas, setFilmDatas] = useState([])
-
-  //fetch API pake axios
+  const { filmDatas, setFilmDatas } = useApi();
 
   useEffect(() => {
-    const fetchDatas = async () => {
-      const res = await axios.get('https://674a9302868020296634d1c9.mockapi.io/dataFilm')
+    const fetchData = async () => {
       try {
-        console.log("Fetching Berhasil")
-        setFilmDatas(res.data)
-      } catch (err) {
-        console.log("Fetching gagal")
+        console.log("sblm")
+        const data = await getApi();
+        setFilmDatas(data);
+        console.log("Fetching Berhasil");
+      } catch {
+        console.error("Fetching gagalll");
       }
-    }
+    };
+
+    fetchData();
+  }, [setFilmDatas]);
+  
+  // useEffect(() => {
+  //   const apiDatas = getApi()
     
-    fetchDatas()
-  }, [])      
+  //   try {
+  //     const [filmDatas, setFilmDatas] = useApi()
+  //     console.log("Fetched!")
+  //     setFilmDatas(apiDatas)
+  //   } catch {
+  //     console.log("UnFetched!")
+  //   }
+  
+  // })
 
   return (
     <div className={`${classes.bodyBg} box-border overflow-x-hidden`}>
@@ -106,7 +119,6 @@ const HomePage = () => {
           </div>
         </div>
       </nav>
-
 
       {/* HERO */}
       <section className={`${classes.bgImage1} xl:h-587 w-full flex items-end px-5 `}>

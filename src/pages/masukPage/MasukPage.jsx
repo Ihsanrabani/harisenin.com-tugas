@@ -34,7 +34,7 @@ const MasukPage = () => {
     const user = users.find(user => user.username === usernameI && user.password === passwordI);
     if (user) {
       navigate('/home');
-      JSON.parse(localStorage.setItem("userLoggedIn", true));
+      localStorage.setItem("userLoggedIn", true);
     } else {
       alert("Username atau password salah!");
     }
