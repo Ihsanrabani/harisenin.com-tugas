@@ -54,7 +54,11 @@ const FavoritPage = () => {
     fetchData();
   }, [setFilmDatas]);
 
-  const {dataFilm, setDataFilm} = useDataFilm();
+  const { dataFilm, setDataFilm, clearDataFilm } = useDataFilm();
+
+  const delData = () => {
+      clearDataFilm()
+  } 
 
   return (
     <div className={`${classes.bodyBg} box-border overflow-x-hidden`}>
@@ -110,6 +114,7 @@ const FavoritPage = () => {
       {/*Film Trending*/}
       <section className="mt-3 ml-5">
           <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Film Favorit Mu</h2>
+          <button className="text-white p-1 bg-red-500 rounded mb-2 font-bold" onClick={delData}>Hapus film favorit</button>
           
           <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>
 

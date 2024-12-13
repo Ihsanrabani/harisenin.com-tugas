@@ -5,7 +5,8 @@ const useDataFilm = create((set, get) => ({
     setDataFilm: (resData) => {
         const updatedData = [...get().dataFilm, resData];
         set({ dataFilm: updatedData });
-    }
+    },
+        clearDataFilm: () => set({ dataFilm: [] }),
 }))
 
 export default useDataFilm;
