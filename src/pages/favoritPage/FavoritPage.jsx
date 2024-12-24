@@ -74,6 +74,7 @@ const FavoritPage = () => {
           <a href="#" className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Series</a>
           <a href="#" className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Film</a>
           <Link to={'/favorit'} className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Film Favorit Saya</Link>
+          <Link to={'/playlist'} className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Playlist</Link>
         </div>
 
         <div className="flex items-center gap-1 xl:mr-8 flex-col mt-4 self-start">
@@ -113,7 +114,7 @@ const FavoritPage = () => {
 
       {/*Film favorit*/}
       <section className="mt-3 ml-5">
-          <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Film Favorit Mu</h2>
+          <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Film Favorit Mu!</h2>
           <button className="text-white p-1 bg-red-500 rounded mb-2 font-bold" onClick={delData}>Hapus film favorit</button>
           
           <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>

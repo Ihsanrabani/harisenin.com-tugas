@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {useNavigate, Link} from "react-router-dom";
 import useApi from "../../store/useApi";
-import useDataFilm from "../../store/useDataFilm.jsx";
 import getApi from "../../services/api/api.js"; 
 
 // style
@@ -10,14 +9,12 @@ import classes from "../../styles/home.module.css";
 // img
 import CHILL_logo from "../../assets/icons/CHILL_logo.png"
 import avatar from "../../assets/icons/Avatar.png"
-import infoIc from "../../assets/icons/info_ic.png"
-import volumeIc from "../../assets/icons/volume_ic.png"
 
 // components
-import FCT from "../../components/fCCard.jsx"
+import FCTNP from "../../components/fCCardNP.jsx"
 
 
-const HomePage = () => {
+const PlaylistPage = () => {
 
   const navigate = useNavigate()
 
@@ -56,10 +53,8 @@ const HomePage = () => {
     fetchData();
   }, [setFilmDatas]);
 
-  const {dataFilm, setDataFilm} = useDataFilm();
-
   return (
-    <div className={`${classes.bodyBg} box-border overflow-x-hidden`}>
+    <div className={`${classes.bodyBg} box-border overflow-x-hidden flex flex-col`}>
       {/* Navbar */}
       <nav className={`${classes.bgGray902} h-16 flex py-1.5 flex items-center px-5`}>
         <div className="flex items-center xl:ml-16 gap-2">
@@ -108,108 +103,16 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> 
 
-      {/* HERO */}
-      <section className={`${classes.bgImage1} xl:h-587 w-full flex items-end px-5 `}>
-        <div className={`flex-col gap-3 ml-3 mb-5 `}>
-          <div className={`${classes.maxWidthTexthero} mt-28`}>
-            <h3 className={`${classes.latoBold} text-white text-2xl md:text-4xl`}>Duty After School</h3>
-            <p className={`${classes.latoMedium} text-lg text-white overflow-hidden text-ellipsis line-clamp-2`}>
-              Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.
-            </p>
-          </div>
-
-          <div className="flex justify-between mt-4">
-            <div className="flex items-center">
-              <button className={`text-white ${classes.bgMulai} py-1 px-3 rounded-full ${classes.latoBold}`}>Mulai</button>
-
-              <div className={`${classes.bgGray903} flex items-center py-1 px-3 rounded-full gap-2`}>
-                <img src={infoIc} alt="Info icon" width="20" height="20" />
-                <p className={`text-white ${classes.latoBold}`}>Selengkapnya</p>
-              </div>
-
-              <p className={`${classes.latoBold} ${classes.textGray901} border p-1 rounded-full`}>18+</p>
-            </div>
-
-            <div className={`flex items-center p-1.5 rounded-full ${classes.borderGray901}`}>
-              <img src={volumeIc} alt="Volume icon" width="20" height="20" />
-            </div>
-          </div>
-        </div>
-      </section>  
-
-
-      {/*Melanjutkan tonton film*/}
-      <section className="mt-4 ml-5 xl:mr-5">
-          <h2 className={`mb-5 ${classes.latoBold} text-xl text-white xl:text-2xl gap-4 md:gap-6`}>Melanjutkan Tonton Film</h2>
-          
-          <div className={`flex gap-3 ${classes.horizontalScroll}`}>
-            {/* JADIIN COMPONEN YG CARD FILM COVER!!! */}
-              <div className={`${classes.bgSect2for1} rounded-lg flex items-end justify-between`}>
-                  <h1 className={`${classes.latoBold} text-white text-xl ml-3 mb-2`}>Don't Look Up</h1>
-                  <p className={`text-md ${classes.latoBold} mb-2 mr-2 text-white`}>★ 4.5/5</p>
-              </div>                
-
-              <div className={`${classes.bgSect2for2} rounded-lg flex items-end justify-between`}>  
-                  <h1 className={`${classes.latoBold} text-white text-xl ml-3 mb-2`}>Doctor strange</h1>
-                  <p className={`text-md ${classes.latoBold} mb-2 mr-2 text-white`}>★ 4.3/5</p>
-              </div>
-
-              <div className={`${classes.bgSect2for3} rounded-lg flex items-end justify-between`}>  
-                  <h1 className={`${classes.latoBold} text-white text-xl ml-3 mb-2`}>Blue Lock</h1>
-                  <p className={`text-md ${classes.latoBold} mb-2 mr-2 text-white`}>★ 4.6/5</p>
-              </div>
-
-              <div className={`${classes.bgSect2for4} rounded-lg flex items-end justify-between`}>  
-                  <h1 className={`${classes.latoBold} text-white text-xl ml-3 mb-2`}>A Man Called Otto</h1>
-                  <p className={`text-md ${classes.latoBold} mb-2 mr-2 text-white`}>★ 4.4/5</p>
-              </div>
-
-              <div className={`${classes.bgSect2for5} rounded-lg flex items-end justify-between`}>  
-                  <h1 className={`${classes.latoBold} text-white text-xl ml-3 mb-2`}>The Batman</h1>
-                  <p className={`text-md ${classes.latoBold} mb-2 mr-2 text-white`}>★ 4.2/5</p>
-              </div>
-          </div>
-      </section>
-
-
-      {/*Top Rating Film dan Series Hari ini*/}
+      {/*Film favorit*/}
       <section className="mt-3 ml-5">
-          <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Top Rating Film dan Series Hari ini</h2>
+          <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Playlist Mu!</h2>
           
           <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>
-            {filmDatas.slice(0, 8).map((poster) => (
-              <FCT id={poster.id} imgUrl={poster.filmPoster} WTB={poster.WTB} WTR={poster.WTR}/>
-            ))}
+
             
-          </div>
-        </section>
 
-
-      {/*Film Trending*/}
-      <section className="mt-3 ml-5">
-          <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Film Trending</h2>
-          
-          <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>
-
-            {filmDatas.slice(9, 17).map((poster) => (
-              <FCT id={poster.id} imgUrl={poster.filmPoster} WTB={poster.WTB} WTR={poster.WTR}/>
-            ))}
-
-          </div>
-          
-      </section>
-
-
-      {/* Rilis Baru */}
-      <section className="mt-3 ml-5">
-          <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Rilis Baru</h2>
-          
-          <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>
-            {filmDatas.slice(18, 26).map((poster) => (
-              <FCT id={poster.id} imgUrl={poster.filmPoster} WTB={poster.WTB} WTR={poster.WTR}/>
-            ))}
           </div>
           
       </section>
@@ -225,7 +128,6 @@ const HomePage = () => {
 
                 <div className="mt-3">
                     <p className="text-gray-901 text-sm mb-8">&copy;2023 Chill All Rights Reserved</p>
-                    <p className={`${classes.textGray901} text-sm mb-8`}>All icons is from icon8, thx!</p>
                 </div>
              </div>
 
@@ -292,7 +194,6 @@ const HomePage = () => {
 
                   <div className="mt-3">
                       <p className={`${classes.textGray901} text-sm mb-8`}>&copy;2023 Chill All Rights Reserved</p>
-                      <p className={`${classes.textGray901} text-sm mb-8`}>All icons is from icon8, thx!</p>
                   </div>
               </div>
 
@@ -315,4 +216,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default PlaylistPage;

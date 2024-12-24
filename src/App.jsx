@@ -3,6 +3,7 @@ import DaftarPage from "./pages/daftarPage/DaftarPage.jsx";
 import MasukPage from "./pages/masukPage/MasukPage.jsx";
 import HomePage from "./pages/homePage/HomePage.jsx";
 import FavoritPage from "./pages/favoritPage/FavoritPage.jsx";
+import PlaylistPage from "./pages/playlistPage/PlaylistPage.jsx";
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/favorit",
     element: <FavoritPage />
+  },
+  {
+    path: "/playlist",
+    element: <PlaylistPage />
   },
 ]);
 
