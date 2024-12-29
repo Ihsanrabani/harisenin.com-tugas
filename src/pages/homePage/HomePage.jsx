@@ -63,12 +63,12 @@ const HomePage = () => {
 
   return (
     <div className={`${classes.bodyBg} box-border overflow-x-hidden`}>
-      <div className="">  
+      {/* <div className="">  
           <div className={`grid justify-items-center text-center z-50 fixed bg-stone-900 w-56 h-16 mt-28 justify-self-end rounded-r-lg border border-2 border-blue-400`}>
               <img src={infoIc} alt="info icon" className="w-5 h-auto mt-1"/>
               <h1 className="text-sm">Genre film berhasil diubah!</h1>
           </div>  
-      </div>
+      </div> */}
       {/* Navbar */}
       <nav className={`${classes.bgGray902} h-16 flex py-1.5 flex items-center px-5`}>
         <div className="flex items-center xl:ml-16 gap-2">
