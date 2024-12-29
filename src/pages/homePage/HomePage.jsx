@@ -3,11 +3,12 @@ import {useNavigate, Link} from "react-router-dom";
 import useApi from "../../store/useApi";
 import useDataFilm from "../../store/useDataFilm.jsx";
 import getApi from "../../services/api/api.js"; 
+import useInfoTitle from "../../store/useInfoTitle.jsx";
 
 // style
 import "../../index.css";
 import classes from "../../styles/home.module.css";
-// img
+// img / icon
 import CHILL_logo from "../../assets/icons/CHILL_logo.png"
 import avatar from "../../assets/icons/Avatar.png"
 import infoIc from "../../assets/icons/info_ic.png"
@@ -15,6 +16,7 @@ import volumeIc from "../../assets/icons/volume_ic.png"
 
 // components
 import FCT from "../../components/fCCard.jsx"
+import fCCard from "../../components/fCCard.jsx";
 
 
 const HomePage = () => {
@@ -57,9 +59,16 @@ const HomePage = () => {
   }, [setFilmDatas]);
 
   const {dataFilm, setDataFilm} = useDataFilm();
+  const { infoTitle, isDisplay } = useInfoTitle()
 
   return (
     <div className={`${classes.bodyBg} box-border overflow-x-hidden`}>
+      <div className="">  
+          <div className={`grid justify-items-center text-center z-50 fixed bg-stone-900 w-56 h-16 mt-28 justify-self-end rounded-r-lg border border-2 border-blue-400`}>
+              <img src={infoIc} alt="info icon" className="w-5 h-auto mt-1"/>
+              <h1 className="text-sm">Genre film berhasil diubah!</h1>
+          </div>  
+      </div>
       {/* Navbar */}
       <nav className={`${classes.bgGray902} h-16 flex py-1.5 flex items-center px-5`}>
         <div className="flex items-center xl:ml-16 gap-2">
@@ -72,7 +81,6 @@ const HomePage = () => {
           <a href="#" className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Series</a>
           <a href="#" className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Film</a>
           <Link to={'/favorit'} className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Film Favorit Saya</Link>
-          <Link to={'/playlist'} className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Playlist</Link>
         </div>
 
         <div className="flex items-center gap-1 xl:mr-8 flex-col mt-4 self-start">
@@ -193,7 +201,7 @@ const HomePage = () => {
           
           <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>
 
-            {filmDatas.slice(9, 17).map((poster) => (
+            {filmDatas.slice(50, 59).map((poster) => (
               <FCT id={poster.id} imgUrl={poster.filmPoster} WTB={poster.WTB} WTR={poster.WTR}/>
             ))}
 
@@ -207,7 +215,7 @@ const HomePage = () => {
           <h2 className={`${classes.latoBold} text-xl text-white mb-5 xl:text-2xl`}>Rilis Baru</h2>
           
           <div className={`flex gap-3 ${classes.horizontalScroll} items-center`}>
-            {filmDatas.slice(18, 26).map((poster) => (
+            {filmDatas.slice(70, 80).map((poster) => (
               <FCT id={poster.id} imgUrl={poster.filmPoster} WTB={poster.WTB} WTR={poster.WTR}/>
             ))}
           </div>

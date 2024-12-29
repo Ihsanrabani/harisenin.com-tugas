@@ -74,7 +74,6 @@ const FavoritPage = () => {
           <a href="#" className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Series</a>
           <a href="#" className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Film</a>
           <Link to={'/favorit'} className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Film Favorit Saya</Link>
-          <Link to={'/playlist'} className={`text-white ${classes.latoRegular} text-sm xl:text-xl`}>Playlist</Link>
         </div>
 
         <div className="flex items-center gap-1 xl:mr-8 flex-col mt-4 self-start">

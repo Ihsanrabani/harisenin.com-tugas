@@ -8,7 +8,7 @@
     }
     
     .text2xs {
-      font-size: 8px;
+      font-size:9px;
     }
 }
 
@@ -28,6 +28,10 @@
 
 .mt87 {
   margin-top: 335px;
+}
+
+.mtFull {
+  margin-top: 850px;
 }
 
 /* TYPOGRPY */
