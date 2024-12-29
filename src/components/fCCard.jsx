@@ -8,7 +8,7 @@ import vdotIco from "../assets/icons/Vdot.png"
 import useApi from "../store/useApi";
 import useDataFilm from "../store/useDataFilm";
 import usePlaylistData from "../store/usePlaylistData";
-import useInfoTitle from "../store/useInfoTitle";
+import useInfoStatus from "../store/useInfoStatus";
 import { use } from "react";
 
 
@@ -17,7 +17,7 @@ const fCCard = ({id, imgUrl, WTB, WTR}) => {
 
     const { filmDatas, setFilmDatas } = useApi();
     const [ genreDatas, setGenreDatas] = useState([]);
-    const { infoTitle, setInfoTitle, setInfoStatus } = useInfoTitle();
+    const { setIsDisplay } = useInfoStatus();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -42,7 +42,7 @@ const fCCard = ({id, imgUrl, WTB, WTR}) => {
 
     const { dataFilm, setDataFilm } = useDataFilm();
     const { playlistData ,setPlaylistData} = usePlaylistData();
-    const {genreDisplay, setGenreDisplay} = useState([])
+    const { genreDisplay, setGenreDisplay } = useState([])
 
     const upDataFilm = () => {
         try {
@@ -68,6 +68,7 @@ const fCCard = ({id, imgUrl, WTB, WTR}) => {
             const apiUrl = import.meta.env.VITE_API_URL;
             const res = await axios.put(`${apiUrl}/${id}`, {genre: newGenre}) // Mengubah value data genre menjadi newGenre   
             if (res.status === 200) {
+                setIsDisplay(true)
                 setFilmDatas(   
                     filmDatas.map((film) => film.id === id ? { ...film, genre: newGenre } : film )
                 )

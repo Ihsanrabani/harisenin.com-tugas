@@ -34,6 +34,11 @@
   margin-top: 850px;
 }
 
+.forInfo {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
 /* TYPOGRPY */
 
 .lsRegular {
